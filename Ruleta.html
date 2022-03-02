@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/stylesheet.css">
+    <title>Ruleta</title>
+</head>
+<body>
+    <header>
+        <img src="/img/LogoTetrico-removebg-preview.png">
+    </header>
+    <main>
+      <div class="list-container">
+      <ul id="spanishPlaces">
+      <li>Sanatorio de Cesuras</li>
+      <li>Monasterio del Diablo</li>
+      <li>Colegio Escolapios de Alella</li>
+      <li>Fábrica de Muñecas de Castellón</li>
+      <li>Pueblo Viejo de Belchite</li>
+      <li>La Mussara</li>
+      <li>Preventorio de Aguas de Busot</li>
+      <li>Laguna Negra de Urbión</li>
+    </ul>
+  </div>
+    <div class="conjunto-ruleta">
+      <div class="barra"></div>
+      <img class="img-fluid" src="/img/Rueda.png" id="ruleta">
+      <img class="calavera" src="/img/Calavera solo_trans.png" alt="">
+      <img class="manos" src="/img/Manos_trans.png" alt="">
+      <img class="palanca" id="palanca" src="/img/Palanca_trans.png" onclick="exis()" alt="">
+    </div>
+    <div id="sonido" style="display: none;">
+      <iframe src="sound/sound_Sonido ruleta.mp3" id="audio"></iframe>
+    </div>
+    <button><p class="replay">Volver a jugar</p></button>
+    <button><p class="reset">Resetear</p></button>
+    <p><ol id="demo"></ol></p>
+        <script src="/assets/script.js"></script>
+    </main>
+</body>
+</html>

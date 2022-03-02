@@ -1,0 +1,167 @@
+body{
+    background-image: url(/img/b.jpg);
+    background-size: cover;
+    text-align: center;
+}
+header{
+    height:8rem;
+}
+header img{
+    position: relative;
+    float:left;
+    margin-left:50px;
+    margin-top:30px;
+    height:9rem;
+}
+img{
+    width:100%;
+    max-width:1000px;
+}
+main{
+    text-align:center;
+}
+#spanishPlaces li{
+    position: relative;
+    display: block;
+    border-radius: 20%;
+    color:white;
+    width:max-content;
+    margin:auto;
+    padding: 1.5rem;
+    font-size:2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:black;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+.barra{
+    height: 70px;
+    width: 15px;
+    background-color: #aaa;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    border-radius: 0px 0px 8px 8px;
+    border: 1px solid #000;
+    border-top: 5px solid #000;
+    z-index: 1000;
+}
+.calavera{
+    position: absolute;
+    top: 1152px;
+    left: 602px;
+    height: 340px;
+    width: 340px;
+
+}
+
+.manos{
+    position: absolute;
+    top: 1197px;
+    left: 520px;
+    height: 213px;
+    width: 506px;
+
+}
+
+#palanca{
+    position: absolute;
+    top: 560px;
+    left: 200px;
+    height: 200px;
+    width: 225px;
+    /*transform: rotate(-30deg);*/
+    transform-origin: right;
+    /*top: 10px;*/
+    /*right: 5px;*/
+    transition: transform 0.5s;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+.conjunto-ruleta img{
+    z-index: 100;
+    transition: all 5s;
+}
+button{
+    cursor:pointer;
+    display: inline-block;
+    background-color: #6C1212;
+    color:white;
+    border-radius: 35%;
+    font-size:1.5rem;
+    padding:1rem;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom:4rem;
+    margin-right:2rem;
+    width:12rem;
+}
+button a{
+    text-decoration: none;
+}
+.ruleta{
+    text-align: center;
+    width:100%;   
+}
+.ruleta img {
+    width:36%;
+    margin:auto;
+    animation: rotation 8s infinite linear;    
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    header img{
+        height:6rem;
+    }
+    .list-container{
+        margin-top:-30%;
+        margin-left:15%;
+    }
+    #spanishPlaces li{
+        font-size: 20px;
+        line-height: 0.5rem;
+        height:0.5rem;
+        padding:0.7rem;
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: rgb(22, 13, 13);
+    }
+    .conjunto-ruleta{
+        width:40%;
+        margin-right:50%;
+    }
+    .barra {
+        height: 70px;
+        width: 15px;
+        background-color: #aaa;
+        margin: auto;
+        position: absolute;
+        top: 10px;
+        border-radius: 0px 0px 8px 8px;
+        border: 1px solid #000;
+          border-top-color: rgb(0, 0, 0);
+          border-top-style: solid;
+          border-top-width: 1px;
+        border-top: 5px solid #000;
+        z-index: 1000;
+        left: 96%;
+    }
+    .palanca{
+        display: none;
+    }
+    .ruleta img{
+        width:50%;
+    }
+    button{
+        padding:0.5rem;
+        width:8rem;
+        font-size:1rem;
+    }
+  }
